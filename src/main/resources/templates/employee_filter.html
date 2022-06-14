@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Employee-Filter</title>
+</head>
+<body>
+    <form action="#" th:action="@{/findById}" th:object="${employee}" method="post">
+        <label>Type Employee ID</label>
+        <input type="text" th:field="*{id}">
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
